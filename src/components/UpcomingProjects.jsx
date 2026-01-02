@@ -43,7 +43,6 @@ const UpcomingProjects = () => {
           View More
         </button>
       </div>
-
       {/* Cards */}
       <div className="row g-4">
         {projectsData.map((project) => (
