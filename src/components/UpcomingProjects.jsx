@@ -1,7 +1,7 @@
 import React from "react";
 
 import cardImage1 from "../assets/images/upcomingprojects1.png";
-import cardImage2 from "../assets/images/upcomingprojects2.png";
+import cardImage2 from "../assets/images/upcomingProjects2.png";
 import cardImage3 from "../assets/images/upcomingprojects3.png";
 
 const projectsData = [
