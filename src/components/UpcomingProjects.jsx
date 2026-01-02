@@ -33,11 +33,11 @@ const projectsData = [
 
 const UpcomingProjects = () => {
   return (
-    <section className="container my-5 upcoming-projects">
+    <section className="container upcoming-projects">
 
       {/* Header */}
       <div className="d-flex justify-content-between align-items-center mb-4">
-        <h2 className="section-title">Upcoming Projects</h2>
+        <h2 className="section-title headBold">Upcoming Projects</h2>
 
         <button className="btn btn-outline-success view-more-btn">
           View More

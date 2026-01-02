@@ -6,7 +6,7 @@ import EventImage2 from '../assets/images/eventcard2.png'
 const EventsNewsSection = () => {
     return (
         
-            <section className="container my-5 events-news-section">
+            <section className="container events-news-section">
                 {/* card section- 1 */}
                 <div className="row g-4">
 

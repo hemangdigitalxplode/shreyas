@@ -1,8 +1,30 @@
+@font-face {
+  font-family: "Neulis Sans";
+  src: url("./assets/fonts/fonnts.com-Neulis_Sans_Regular.otf") format("otf");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Neulis Sans";
+  src: url("./assets/fonts/fonnts.com-Neulis_Sans_Bold.otf") format("otf");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root{
+  --font-family-root: "Neulis Sans";
+  --heading-bold-font: 800; 
+  --sub-heading-bold-font: 400;
+}
+
 .nav-link {
   position: relative;
   font-size: 10px;
   color: #000 !important;
-  font-weight: 600;
+  font-weight: 400;
+  font-family: var(--font-family-root);
 }
 
 .nav-link::after {
@@ -31,24 +53,28 @@
   font-size: 14px;
   color: #006700;
   font-weight: 600;
+  font-family: var(--font-family-root);
 }
 
 .leftCard h1 {
   font-weight: 700;
   line-height: 1.0;
+  font-family: var(--font-family-root);
 }
 
 .leftCard p {
   color: #000;
   font-size: 15px;
+  font-family: var(--font-family-root);
 }
 
 .aboutBtn {
   background-color: #006700 !important;
   border-radius: 0 !important;
   color: white !important;
-  font-weight: 600 !important;
+  /* font-weight: 600 !important; */
   padding: 5px 30px !important;
+  font-family: var(--font-family-root);
 }
 
 /* Tabs */
@@ -114,11 +140,13 @@
 .business-card h5 {
   margin-bottom: 6px;
   font-weight: 600;
+  font-family: var(--font-family-root);
 }
 
 .business-card p {
   font-size: 14px;
   margin: 0;
+  font-family: var(--font-family-root);
 }
 
 .swiper-slide {
@@ -148,6 +176,7 @@
   font-size: 36px;
   font-weight: 600;
   margin: 0;
+  font-family: var(--font-family-root);
 }
 
 /* Tabs container */
@@ -167,6 +196,7 @@
   color: #000;
   position: relative;
   white-space: nowrap;
+  font-family: var(--font-family-root);
 }
 
 /* Active tab */
@@ -217,12 +247,14 @@
   font-size: 50px;
   font-weight: 600;
   margin-bottom: 8px;
+  font-family: var(--font-family-root);
 }
 
 .sustainability-overlay p {
   font-size: 26px;
   font-weight: 400;
   opacity: 0.9;
+  font-family: var(--font-family-root);
 }
 
 /* Dark gradient for readability */
@@ -269,13 +301,15 @@
 .section-title {
   font-size: 32px;
   font-weight: 600;
+  font-family: var(--font-family-root);
 }
 
 /* View More Button */
 .view-more-btn {
   border-radius: 2px;
   padding: 6px 16px;
-  font-weight: 500;
+  font-weight: 400;
+  font-family: var(--font-family-root);
 }
 
 /* Card */
@@ -307,12 +341,14 @@
   font-size: 18px;
   font-weight: 600;
   margin-bottom: 10px;
+  font-family: var(--font-family-root);
 }
 
 .project-content p {
   font-size: 14px;
   color: #555;
   line-height: 1.6;
+  font-family: var(--font-family-root);
 }
 
 /* Responsive */
@@ -327,9 +363,7 @@
 }
 
 /* Section */
-.events-news-section {
-  font-family: "DM Sans", sans-serif;
-}
+
 
 /* EVENTS CARD */
 .event-card {
@@ -448,7 +482,7 @@
 }
 .footer {
   background: #ffffff;
-  font-family: "DM Sans", sans-serif;
+  font-family: var(--font-family-root);
   border-top: 1px solid #eee;
 }
 
@@ -604,13 +638,17 @@
 }
 
 .hero-content h1 span {
-  font-weight: 400;
+  /* font-weight: 400; */
 }
 
 .hero-content p {
   font-size: 16px;
   margin-bottom: 25px;
   color: #eaeaea;
+  font-family: var(--font-family-root);
+  font-weight: var(--sub-heading-bold-font);
+  width: 408px;
+   
 }
 
 /* Stats */
@@ -619,6 +657,7 @@
   gap: 30px;
   margin-bottom: 25px;
   flex-wrap: wrap;
+  font-family: var(--font-family-root);
 }
 
 .hero-stats div strong {
@@ -629,15 +668,17 @@
 .hero-stats div span {
   font-size: 14px;
   color: #dcdcdc;
+  font-family: var(--font-family-root);
 }
 
 /* Button */
 .hero-btn {
   background: #1a8f2b;
   color: #fff;
-  padding: 10px 25px;
-  border-radius: 4px;
+  padding: 10px 45px !important;
+  border-radius: 0 !important;
   border: none;
+  font-family: var(--font-family-root);
 }
 
 .hero-btn:hover {
@@ -667,5 +708,25 @@
 }
 .ourBusinesses{
   margin: 100px 0;
+}
+.upcoming-projects{
+  margin: 100px 0;
+}
+.events-news-section {
+  margin: 100px 0;
+  font-family: var(--font-family-root);
+}
+.headBold{
+  font-family: "Neulis Sans";
+  font-weight: 800;
+}
+.headSubText{
+  font-family: "Neulis Sans";
+  font-weight: 300;
+}
+.business-tabs button{
+  font-family: var(--font-family-root);
+  font-weight: 400;
+  color: #000;
 }
 

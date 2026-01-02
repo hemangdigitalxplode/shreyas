@@ -13,8 +13,8 @@ const HeroSection = () => {
           <div className="hero-content">
 
             <h1>
-              Pioneering India’s Integrated <br />
-              <span>Rice Processing Excellence</span>
+              <span className="headBold">Pioneering India’s Integrated</span> <br />
+              <span className="headSubText">Rice Processing Excellence</span>
             </h1>
 
             <p>
