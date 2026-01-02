@@ -6,17 +6,19 @@ import cardImg3 from '../assets/images/Background3.png'
 import SustainabilityTabs from "../components/SustainabilityTabs";
 import UpcomingProjects from "../components/UpcomingProjects";
 import EventsNewsSection from "../components/EventsNewsSection";
+import GlobalSection from "../components/GlobalPresence";
+import HeroSection from "../components/HeroSection";
 
 const Home = () => {
     const [activeTab, setActiveTab] = useState("verticals");
-
-
-
     return (
         <>
-            <div className="container">
+            <div className="heroBanner">
+                <HeroSection />
+            </div>
+            <div className="container"> 
                 {/* About section */}
-                <div className="row align-items-center gy-4">
+                <div className="row align-items-center gy-4 aboutSection">
                     {/* LEFT: Image */}
                     <div className="col-md-6">
                         <img
@@ -60,7 +62,7 @@ const Home = () => {
                 </div>
 
                 {/* Our business section */}
-                <div className="my-5">
+                <div className="ourBusinesses">
                     <div className="d-flex justify-content-between align-items-center mb-4 flex-wrap gap-3">
                         <h2 className="mb-0">Our Business</h2>
 
@@ -80,7 +82,6 @@ const Home = () => {
                             </button>
                         </div>
                     </div>
-
                     {/* Tab Content */}
                     {activeTab === "verticals" && (
                         <div className="row g-4">
@@ -150,18 +151,18 @@ const Home = () => {
                 <div className="my-5">
                     <SustainabilityTabs />
                 </div>
-
                 {/* upcoming projects */}
                 <div className="my-5">
                     <UpcomingProjects />
                 </div>
-
                 {/* Event section  */}
                 <div className="my-5">
-                    <EventsNewsSection/>
+                    <EventsNewsSection />
+                </div>
+                <div className="my-5">
+                    <GlobalSection />
                 </div>
             </div>
-
         </>
     )
 
