@@ -8,6 +8,8 @@ import UpcomingProjects from "../components/UpcomingProjects";
 import EventsNewsSection from "../components/EventsNewsSection";
 import GlobalSection from "../components/GlobalPresence";
 import HeroSection from "../components/HeroSection";
+import ExpandingSlider from "../components/ExpandingSlider";
+import ExpandableCardSlider from "../components/ExpandableCardSlider";
 
 const Home = () => {
     const [activeTab, setActiveTab] = useState("verticals");
@@ -16,7 +18,7 @@ const Home = () => {
             <div className="heroBanner">
                 <HeroSection />
             </div>
-            <div className="container"> 
+            <div className="container">
                 {/* About section */}
                 <div className="row align-items-center gy-4 aboutSection">
                     {/* LEFT: Image */}
@@ -147,22 +149,50 @@ const Home = () => {
                         </div>
                     )}
                 </div>
-                {/* Sustainability section */}
+
+            </div>
+
+            {/* slider section */}
+            <div className="">
                 <div className="my-5">
-                    <SustainabilityTabs />
+                    <ExpandingSlider />
                 </div>
-                {/* upcoming projects */}
-                <div className="my-5">
-                    <UpcomingProjects />
-                </div>
-                {/* Event section  */}
-                <div className="my-5">
-                    <EventsNewsSection />
-                </div>
+            </div>
+            {/* Sustainability section */}
+            <div className="my-5">
+                <SustainabilityTabs />
+            </div>
+            {/* map section */}
+            <div className="container">
                 <div className="my-5">
                     <GlobalSection />
                 </div>
             </div>
+            {/* upcoming projects */}
+            <div className="container">
+                <div className="my-5">
+                    <UpcomingProjects />
+                </div>
+            </div>
+            {/* Event section  */}
+            <div className="container">
+                <div className="my-5">
+                    <EventsNewsSection />
+                </div>
+            </div>
+            {/* our journey */}
+            <div className="container">
+                <div className="my-5">
+                    <ExpandableCardSlider />
+                </div>
+            </div>
+
+
+
+
+
+
+
         </>
     )
 
