@@ -1697,3 +1697,10 @@
   font-family: var(--font-family-root);
   margin-bottom: 30px;
 }
+
+.BgImageWrap{
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  margin-bottom: -90px;
+}
