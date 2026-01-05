@@ -1015,7 +1015,7 @@
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+  /* background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)); */
 }
 
 /* Active */
@@ -1531,4 +1531,169 @@
     width: 100%;
     text-align: center;
   }
+}
+
+.foodGrainHeroBtn{
+  margin-top: 20px;
+}
+.foodGrainsHeroContent h1{
+  line-height: 40px;
+  font-size: 48px !important;
+}
+.foodGrainsHeroContent p{
+  margin-top: 40px !important;
+  width: auto !important;
+}
+.futureTabWrapper{
+  margin-top: 35px;
+}
+/* ===============================
+   Sustainability Slider
+================================ */
+
+.sustain-slider {
+  position: relative;
+  width: 100%;
+  height: 520px;
+  overflow: hidden;
+  /* border-radius: 12px; */
+  font-family: var(--font-family-root);
+}
+
+/* Background Image */
+.sustain-bg {
+  position: absolute;
+  inset: 0;
+}
+
+.sustain-bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Overlay */
+.sustain-overlay {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  padding: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  /* background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.65) 0%,
+    rgba(0, 0, 0, 0.35) 40%,
+    rgba(0, 0, 0, 0.1) 100%
+  ); */
+}
+
+/* Left Content */
+.sustain-left {
+  max-width: 40%;
+  color: #fff;
+}
+
+.sustain-left h2 {
+  font-size: 44px;
+  line-height: 1.2;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.sustain-sub {
+  font-size: 14px;
+  opacity: 0.85;
+}
+
+/* Thumbnails */
+.sustain-thumbs {
+  display: flex;
+  gap: 22px;
+}
+
+.sustain-thumb {
+  width: 200px;
+  cursor: pointer;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.sustain-thumb img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.sustain-thumb p {
+  margin-top: 8px;
+  font-size: 14px;
+  color: #fff;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.4);
+  padding-bottom: 6px;
+}
+
+.sustain-thumb.active {
+  transform: translateY(-6px);
+}
+
+.sustain-thumb.active p {
+  border-color: #ffffff;
+}
+
+/* ===============================
+   Responsive
+================================ */
+
+@media (max-width: 1024px) {
+  .sustain-left h2 {
+    font-size: 36px;
+  }
+
+  .sustain-thumb {
+    width: 170px;
+  }
+}
+
+@media (max-width: 768px) {
+  .sustain-slider {
+    height: auto;
+  }
+
+  .sustain-overlay {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    padding: 40px 20px;
+  }
+
+  .sustain-left {
+    max-width: 100%;
+  }
+
+  .sustain-thumbs {
+    width: 100%;
+    overflow-x: auto;
+  }
+
+  .sustain-thumb {
+    min-width: 160px;
+  }
+}
+
+@media (max-width: 480px) {
+  .sustain-left h2 {
+    font-size: 28px;
+  }
+
+  .sustain-thumb img {
+    height: 100px;
+  }
+}
+
+.journerCardHeading{
+  font-size: 30px;
+  font-family: var(--font-family-root);
+  margin-bottom: 30px;
 }

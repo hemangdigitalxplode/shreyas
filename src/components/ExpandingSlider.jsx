@@ -1,5 +1,9 @@
 import React, { useState } from "react";
 import Slider1 from '../assets/images/slider-1.png'
+import Slider2 from '../assets/images/slider-2.png'
+import Slider3 from '../assets/images/slider-3.png'
+import Slider4 from '../assets/images/slider-4.png'
+import Slider5 from '../assets/images/slider-5.png'
 
 const slidesData = [
     {
@@ -11,21 +15,28 @@ const slidesData = [
     },
     {
         id: 2,
-        img: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e",
+        img: Slider2,
         title: "Title",
         boxTitle: "Advanced Processing Facilities",
         boxSubTitle: "Global Quality Standards",
     },
     {
         id: 3,
-        img: "https://images.unsplash.com/photo-1558979158-65a1eaa08691",
+        img: Slider3,
         title: "Title",
         boxTitle: "Integrated Rice Processing",
         boxSubTitle: "Zero Discharge Operations",
     },
     {
         id: 4,
-        img: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e",
+        img: Slider4,
+        title: "Title",
+        boxTitle: "High Capacity Manufacturing",
+        boxSubTitle: "Export to 30+ Countries",
+    },
+    {
+        id: 4,
+        img: Slider5,
         title: "Title",
         boxTitle: "High Capacity Manufacturing",
         boxSubTitle: "Export to 30+ Countries",

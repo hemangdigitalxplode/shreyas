@@ -4,10 +4,16 @@ import ProductRange from '../components/ProductRange';
 import ExpandingSlider from '../components/ExpandingSlider';
 import CertificationsSection from '../components/CertificationsSection';
 import CareerBanner from '../components/CareerBanner';
+import FoodGrainsHero from '../components/FoodGrainsHero';
+import FutureReady from '../components/FutureReady';
 
 const FoodGrains = () => {
     return (
         <>
+            {/* Hero section */}
+            <div className='heroBannerContainer'>
+                <FoodGrainsHero />
+            </div>
             {/* About section */}
             <div className='aboutGrainsSectionContainer'>
                 <AboutFoodGrains />
@@ -19,6 +25,10 @@ const FoodGrains = () => {
             {/* Slider section */}
             <div className='sliderSectionContainer'>
                 <ExpandingSlider />
+            </div>
+            {/* tab section */}
+            <div className='tabSectionContainer'>
+                <FutureReady />
             </div>
             {/* certificate section */}
             <div className='certificationSectionContainer'>

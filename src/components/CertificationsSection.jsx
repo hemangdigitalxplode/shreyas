@@ -1,45 +1,53 @@
 import React from "react";
+import logo1 from '../assets/images/certifiactions/logo1.png'
+import logo2 from '../assets/images/certifiactions/logo2.png'
+import logo3 from '../assets/images/certifiactions/logo3.png'
+import logo4 from '../assets/images/certifiactions/logo4.png'
+import logo5 from '../assets/images/certifiactions/logo5.png'
+import logo6 from '../assets/images/certifiactions/logo6.png'
+import logo7 from '../assets/images/certifiactions/logo7.png'
+import logo8 from '../assets/images/certifiactions/logo8.png'
 
 const certifications = [
   {
     id: 1,
     name: "FSSAI",
-    image: "/images/certifications/fssai.png",
+    image: logo1,
   },
   {
     id: 2,
     name: "ISO 22000",
-    image: "/images/certifications/iso-22000.png",
+    image: logo2,
   },
   {
     id: 3,
     name: "ISO 9001",
-    image: "/images/certifications/iso-9001.png",
+    image: logo3,
   },
   {
     id: 4,
     name: "HACCP",
-    image: "/images/certifications/haccp.png",
+    image: logo4,
   },
   {
     id: 5,
     name: "APEDA",
-    image: "/images/certifications/apeda.png",
+    image: logo5,
   },
   {
     id: 6,
     name: "GMP",
-    image: "/images/certifications/gmp.png",
+    image: logo6,
   },
   {
     id: 7,
     name: "Halal",
-    image: "/images/certifications/halal.png",
+    image: logo7,
   },
   {
     id: 8,
     name: "AIREA",
-    image: "/images/certifications/airea.png",
+    image: logo8,
   },
 ];
 

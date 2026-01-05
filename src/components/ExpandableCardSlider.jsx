@@ -1,26 +1,29 @@
 import React, { useState } from "react";
+import CardImage1 from '../assets/images/our-journey-card-1.png'
+import CardImage2 from '../assets/images/our-journey-card-2.png'
+import CardImage3 from '../assets/images/our-journey-card-3.png'
 
 const sliderData = [
     {
         id: 1,
-        title: "Dota 2",
+        title: "Build Your Carrer",
         desc:
             "Dota 2 is a multiplayer online battle arena by Valve. The game is a sequel to Defense of the Ancients.",
-        img: "https://placehold.co/720X620",
+        img: CardImage1,
     },
     {
         id: 2,
-        title: "The Witcher 3",
+        title: "Our Values",
         desc:
             "The Witcher 3 is a multiplayer online battle arena by Valve. The game is a sequel to Defense of the Ancients.",
-        img: "https://placehold.co/720X620",
+        img: CardImage2,
     },
     {
         id: 3,
-        title: "RDR 2",
+        title: "Life at Shreyas",
         desc:
             "RDR 2 is a multiplayer online battle arena by Valve. The game is a sequel to Defense of the Ancients.",
-        img: "https://placehold.co/720X620",
+        img: CardImage3,
     },
 ];
 
@@ -46,8 +49,8 @@ const ExpandableCardSlider = () => {
                         onClick={() => setActiveId(item.id)}
                     >
                         <div className="item-desc">
-                            <h3>{item.title}</h3>
-                            <p>{item.desc}</p>
+                            <h3 className="journerCardHeading">{item.title}</h3>
+                            {/* <p>{item.desc}</p> */}
                         </div>
                     </div>
                 ))}
