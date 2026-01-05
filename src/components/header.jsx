@@ -15,8 +15,7 @@ const Header = () => {
                             alt="Logo"
                             height="60"
                             className="me-2"
-                        />
-
+                        /> 
                     </a>
 
                     {/* Mobile Toggle */}

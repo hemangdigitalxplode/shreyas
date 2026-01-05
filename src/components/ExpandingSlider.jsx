@@ -1,9 +1,10 @@
 import React, { useState } from "react";
+import Slider1 from '../assets/images/slider-1.png'
 
 const slidesData = [
     {
         id: 1,
-        img: "https://images.unsplash.com/photo-1558979158-65a1eaa08691",
+        img: Slider1,
         title: "Title",
         boxTitle: "State of the Art Manufacturing Infrastructure",
         boxSubTitle: "Japanese Satake Milling & Sortex",

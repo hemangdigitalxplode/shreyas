@@ -5,6 +5,7 @@ import Header from "./components/header";
 import Footer from "./components/footer";
 
 import Home from "./Pages/home";
+import FoodGrains from "./Pages/foodgrains";
 
 const App = () => {
   return (
@@ -18,9 +19,9 @@ const App = () => {
         <main className="">
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/food-grains" element={<FoodGrains />} />
           </Routes>
         </main>
-
         {/* Footer – sab routes pe */}
         <Footer />
 
